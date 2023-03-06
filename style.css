@@ -12,12 +12,12 @@ body {
 	font-family: Open Sans, Helvetica, sans-serif;
 	font-weight: 700;
 	color: #222;
-	min-height: 100vh;
-	background: url("assets/background.jpg") center fixed;
-	background-size: cover;
-	padding: 0.5em;
+	padding: .5em;
 	display: grid;
 	gap: 1em;
+
+	background: url("assets/background.jpg") center fixed;
+	background-size: cover;
 }
 
 .sidebar {
@@ -37,7 +37,7 @@ body {
 .sidebar__poster {
 	border-radius: 0.5em;
 	object-fit: cover;
-	max-width: 20em;
+	max-width: 17em;
 }
 
 .sidebar__text {
@@ -58,7 +58,7 @@ body {
 }
 
 .sidebar__link img {
-	height: 3em;
+	height: 2.5em;
 }
 
 .sidebar__mark {
@@ -117,17 +117,25 @@ body {
 	object-fit: cover;
 }
 
-@media (min-width: 420px){
-	body{
+@media (min-width: 420px) {
+	body {
 		padding: 1em;
 	}
 
-	.post{
+	.post {
 		padding: 1.5em;
 	}
 
-	.sidebar__body{
+	.sidebar__body {
 		padding: 1.5em;
+	}
+
+	.sidebar__poster{
+		max-width: 20em;
+	}
+
+	.sidebar__link img{
+		height: 3em;
 	}
 }
 
@@ -189,8 +197,8 @@ body {
 	}
 }
 
-@media (max-width: 780px){
-	.sidebar__poster{
+@media (max-width: 780px) {
+	.sidebar__poster {
 		margin-bottom: 2em;
 	}
 }
